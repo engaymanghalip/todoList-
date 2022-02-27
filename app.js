@@ -16,7 +16,6 @@ const getTasks = () => {
     tasks = JSON.parse(localStorage.getItem("tasks"));
     tasks.map((task) => {
       const li = document.createElement("li");
-      li.classList.add("task-item");
       li.innerHTML += ` <div id="firstDiv" key="${task.id}"> 
                         <span>${task.text}</span>
                         <span>
